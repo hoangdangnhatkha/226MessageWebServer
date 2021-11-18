@@ -1,0 +1,13 @@
+
+from django.shortcuts import render
+from django.http import HttpResponse
+from hello.models import msgserver
+# Create your views here.
+def hello(request):
+	return HttpResponse("Hello World!")
+def get(request, id):
+	get_key = msgserver.objects.filter(id=id)
+	if (len(get_key) == 1):
+		return HttpResponse("Message with Key(%(id)) is: %(Message)" %{'id':msgserver)
+	else:
+		return HttpResponse("There is no message")

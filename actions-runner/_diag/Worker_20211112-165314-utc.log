@@ -1,0 +1,2455 @@
+[2021-11-12 16:53:14Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2021-11-12 16:53:14Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:14Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:14Z INFO HostContext] Well known config file 'Credentials': '/home/student/226MessageWebServer/actions-runner/.credentials'
+[2021-11-12 16:53:15Z INFO Worker] Version: 2.284.0
+[2021-11-12 16:53:15Z INFO Worker] Commit: 9027c154d05776c16f6df6c0345bc9ec20440ebe
+[2021-11-12 16:53:15Z INFO Worker] Culture: en-US
+[2021-11-12 16:53:15Z INFO Worker] UI Culture: en-US
+[2021-11-12 16:53:15Z INFO Worker] Waiting to receive the job message from the channel.
+[2021-11-12 16:53:15Z INFO ProcessChannel] Receiving message of length 20525, with hash 'd2e34be9b7d142c41dafd76f7a81d92881bab4f3013aa2aeb99a0576946004a5'
+[2021-11-12 16:53:15Z INFO Worker] Message received.
+[2021-11-12 16:53:15Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/main.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v2",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "a60052d4-79a0-5821-3eeb-84adb9872c5b",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 20,
+        "col": 15,
+        "lit": "Install pipenv"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 21,
+              "col": 14,
+              "lit": "pip3 install pipenv"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "dd23db01-cff6-57a4-373a-5c8097a97333",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 22,
+        "col": 15,
+        "lit": "Run the tests"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 23,
+              "col": 14,
+              "lit": "pipenv install django\npipenv run website/manage.py test hello\n"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "87b991c0-db8a-593e-4233-d8a37f15e4c9",
+      "name": "__run_2"
+    }
+  ],
+  "variables": {
+    "system.isScheduled": {
+      "value": "False"
+    },
+    "system.servertype": {
+      "value": "Hosted"
+    },
+    "system.culture": {
+      "value": "en-US"
+    },
+    "system.pipelineStartTime": {
+      "value": "2021-11-12 16:53:12+00:00"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "system.teamProjectId": {
+      "value": "00000000-0000-0000-0000-000000000000"
+    },
+    "build.buildId": {
+      "value": "5"
+    },
+    "build.containerId": {
+      "value": "15332643"
+    },
+    "system.workflowFilePath": {
+      "value": ".github/workflows/main.yml"
+    },
+    "system.phaseDisplayName": {
+      "value": "build"
+    },
+    "system.phaseId": {
+      "value": "6884a131-87da-5381-61f3-d7acc3b91d76"
+    },
+    "system.phaseName": {
+      "value": "build"
+    },
+    "system.phaseAttempt": {
+      "value": "1"
+    },
+    "system.jobIdentifier": {
+      "value": "build.__default"
+    },
+    "system.jobAttempt": {
+      "value": "1"
+    },
+    "System.JobPositionInPhase": {
+      "value": "1"
+    },
+    "System.TotalJobsInPhase": {
+      "value": "1"
+    },
+    "system.github.job": {
+      "value": "build"
+    },
+    "system.jobDisplayName": {
+      "value": "build"
+    },
+    "system.jobId": {
+      "value": "ca395085-040a-526b-2ce8-bdc85f692774"
+    },
+    "system.jobName": {
+      "value": "__default"
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Actions\":\"write\",\"Checks\":\"write\",\"Contents\":\"write\",\"Deployments\":\"write\",\"Discussions\":\"write\",\"Issues\":\"write\",\"Metadata\":\"read\",\"Packages\":\"write\",\"Pages\":\"write\",\"PullRequests\":\"write\",\"RepositoryProjects\":\"write\",\"SecurityEvents\":\"write\",\"Statuses\":\"write\"}"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "PipelineAgentJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "Actions",
+    "version": 20,
+    "planId": "61f7744b-3908-44a9-9f5a-65640cf96cd6",
+    "planGroup": "Actions:00000000-0000-0000-0000-000000000000:1",
+    "artifactUri": "vstfs:///Build/Build/5",
+    "artifactLocation": null,
+    "definition": {
+      "_links": {},
+      "id": 3,
+      "name": "226MessageWebServer"
+    },
+    "owner": {
+      "_links": {},
+      "id": 3,
+      "name": "hoangdangnhatkha"
+    }
+  },
+  "timeline": {
+    "id": "61f7744b-3908-44a9-9f5a-65640cf96cd6",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "ca395085-040a-526b-2ce8-bdc85f692774",
+  "jobDisplayName": "build",
+  "jobName": "__default",
+  "requestId": 5,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "51e3e685-a72d-4f16-b415-951dd8672206",
+          "ServerName": "Ax0Ej6jhyj4ZtQzoHXEbkH0BeyDq8whKqU8oAVKsNSbCVBwj6I",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/Ax0Ej6jhyj4ZtQzoHXEbkH0BeyDq8whKqU8oAVKsNSbCVBwj6I/"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://pipelines.actions.githubusercontent.com/Ax0Ej6jhyj4ZtQzoHXEbkH0BeyDq8whKqU8oAVKsNSbCVBwj6I/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": ***
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "b11da9f029856c1cfcdc6008883639e3c03f67d8"
+        },
+        {
+          "k": "repository",
+          "v": "hoangdangnhatkha/226MessageWebServer"
+        },
+        {
+          "k": "repository_owner",
+          "v": "hoangdangnhatkha"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/hoangdangnhatkha/226MessageWebServer.git"
+        },
+        {
+          "k": "run_id",
+          "v": "1453959320"
+        },
+        {
+          "k": "run_number",
+          "v": "5"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "actor",
+          "v": "hoangdangnhatkha"
+        },
+        {
+          "k": "workflow",
+          "v": "CI"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "b11da9f029856c1cfcdc6008883639e3c03f67d8"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "de1109241494dde4b61d5ccbd0de769078566923"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "hoangdangnhatkha@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Mime"
+                              },
+                              {
+                                "k": "username",
+                                "v": "hoangdangnhatkha"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "hoangdangnhatkha@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Mime"
+                              },
+                              {
+                                "k": "username",
+                                "v": "hoangdangnhatkha"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "b11da9f029856c1cfcdc6008883639e3c03f67d8"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Update new file with urls and setting.py"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2021-11-12T08:50:49-08:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "0e1ca2ec8e6d7d592a6b6d2ac8ec9265430859ec"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/hoangdangnhatkha/226MessageWebServer/commit/b11da9f029856c1cfcdc6008883639e3c03f67d8"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/hoangdangnhatkha/226MessageWebServer/compare/de1109241494...b11da9f02985"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "hoangdangnhatkha@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Mime"
+                          },
+                          {
+                            "k": "username",
+                            "v": "hoangdangnhatkha"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "hoangdangnhatkha@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Mime"
+                          },
+                          {
+                            "k": "username",
+                            "v": "hoangdangnhatkha"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "b11da9f029856c1cfcdc6008883639e3c03f67d8"
+                    },
+                    {
+                      "k": "message",
+                      "v": "Update new file with urls and setting.py"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2021-11-12T08:50:49-08:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "0e1ca2ec8e6d7d592a6b6d2ac8ec9265430859ec"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/hoangdangnhatkha/226MessageWebServer/commit/b11da9f029856c1cfcdc6008883639e3c03f67d8"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "90922836+hoangdangnhatkha@users.noreply.github.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "hoangdangnhatkha"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/hoangdangnhatkha/226MessageWebServer.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1635372201.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": null
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "hoangdangnhatkha/226MessageWebServer"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/hoangdangnhatkha/226MessageWebServer.git"
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/hoangdangnhatkha/226MessageWebServer"
+                    },
+                    {
+                      "k": "id",
+                      "v": 421986344.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "Python"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "226MessageWebServer"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOGScAKA"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/90922836?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "90922836+hoangdangnhatkha@users.noreply.github.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/hoangdangnhatkha/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/hoangdangnhatkha/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/hoangdangnhatkha/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/hoangdangnhatkha/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/hoangdangnhatkha"
+                          },
+                          {
+                            "k": "id",
+                            "v": 90922836.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "hoangdangnhatkha"
+                          },
+                          {
+                            "k": "name",
+                            "v": "hoangdangnhatkha"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDQ6VXNlcjkwOTIyODM2"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/hoangdangnhatkha/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/hoangdangnhatkha/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/hoangdangnhatkha/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/hoangdangnhatkha/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/hoangdangnhatkha/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/hoangdangnhatkha"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1636735988.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 17.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:hoangdangnhatkha/226MessageWebServer.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/hoangdangnhatkha/226MessageWebServer"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/hoangdangnhatkha/226MessageWebServer/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2021-11-10T18:59:52Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/hoangdangnhatkha/226MessageWebServer"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/90922836?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/hoangdangnhatkha/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/hoangdangnhatkha/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/hoangdangnhatkha/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/hoangdangnhatkha/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/hoangdangnhatkha"
+                    },
+                    {
+                      "k": "id",
+                      "v": 90922836.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "hoangdangnhatkha"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDQ6VXNlcjkwOTIyODM2"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/hoangdangnhatkha/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/hoangdangnhatkha/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/hoangdangnhatkha/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/hoangdangnhatkha/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/hoangdangnhatkha/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/hoangdangnhatkha"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        }
+      ]
+    },
+    "needs": {
+      "t": 2
+    },
+    "inputs": null,
+    "matrix": null,
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    }
+  }
+}
+[2021-11-12 16:53:15Z INFO JobRunner] Job ID ca395085-040a-526b-2ce8-bdc85f692774
+[2021-11-12 16:53:15Z INFO JobRunner] Creating job server with URL: https://pipelines.actions.githubusercontent.com/Ax0Ej6jhyj4ZtQzoHXEbkH0BeyDq8whKqU8oAVKsNSbCVBwj6I/
+[2021-11-12 16:53:15Z INFO ConfigurationStore] currentAssemblyLocation: /home/student/226MessageWebServer/actions-runner/bin/Runner.Worker.dll
+[2021-11-12 16:53:15Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:15Z INFO ConfigurationStore] binPath: /home/student/226MessageWebServer/actions-runner/bin
+[2021-11-12 16:53:15Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:15Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:15Z INFO ConfigurationStore] RootFolder: /home/student/226MessageWebServer/actions-runner
+[2021-11-12 16:53:15Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:15Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:15Z INFO HostContext] Well known config file 'Runner': '/home/student/226MessageWebServer/actions-runner/.runner'
+[2021-11-12 16:53:15Z INFO ConfigurationStore] ConfigFilePath: /home/student/226MessageWebServer/actions-runner/.runner
+[2021-11-12 16:53:15Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:15Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:15Z INFO HostContext] Well known config file 'Credentials': '/home/student/226MessageWebServer/actions-runner/.credentials'
+[2021-11-12 16:53:15Z INFO ConfigurationStore] CredFilePath: /home/student/226MessageWebServer/actions-runner/.credentials
+[2021-11-12 16:53:15Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:15Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:15Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/student/226MessageWebServer/actions-runner/.credentials_migrated'
+[2021-11-12 16:53:15Z INFO ConfigurationStore] MigratedCredFilePath: /home/student/226MessageWebServer/actions-runner/.credentials_migrated
+[2021-11-12 16:53:15Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:15Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:15Z INFO HostContext] Well known config file 'Service': '/home/student/226MessageWebServer/actions-runner/.service'
+[2021-11-12 16:53:15Z INFO ConfigurationStore] ServiceConfigFilePath: /home/student/226MessageWebServer/actions-runner/.service
+[2021-11-12 16:53:15Z INFO ConfigurationStore] Read setting file: 299 chars
+[2021-11-12 16:53:15Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-11-12 16:53:15Z INFO Worker] Listening for cancel message from the channel.
+[2021-11-12 16:53:15Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2021-11-12 16:53:16Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-11-12 16:53:18Z INFO JobServerQueue] Start process web console line queue.
+[2021-11-12 16:53:18Z INFO JobServerQueue] Start process file upload queue.
+[2021-11-12 16:53:18Z INFO JobServerQueue] Start process timeline update queue.
+[2021-11-12 16:53:18Z INFO ExecutionContext] Initialize GitHub context
+[2021-11-12 16:53:18Z INFO ExecutionContext] Initialize Env context
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Diag': '/home/student/226MessageWebServer/actions-runner/_diag'
+[2021-11-12 16:53:18Z INFO JobRunner] Starting the job execution context.
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:18Z INFO JobRunner] Validating directory permissions for: '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Tools': '/home/student/226MessageWebServer/actions-runner/_work/_tool'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Temp': '/home/student/226MessageWebServer/actions-runner/_work/_temp'
+[2021-11-12 16:53:18Z INFO JobRunner] Getting job extension.
+[2021-11-12 16:53:18Z INFO JobRunner] Initialize job. Getting all job steps.
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Diag': '/home/student/226MessageWebServer/actions-runner/_diag'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:18Z INFO HostContext] Well known config file 'Credentials': '/home/student/226MessageWebServer/actions-runner/.credentials'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:18Z INFO HostContext] Well known config file 'SetupInfo': '/home/student/226MessageWebServer/actions-runner/.setup_info'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:18Z INFO PipelineDirectoryManager] Loading tracking config if exists: /home/student/226MessageWebServer/actions-runner/_work/_PipelineMapping/hoangdangnhatkha/226MessageWebServer/PipelineFolder.json
+[2021-11-12 16:53:18Z INFO PipelineDirectoryManager] Updating job run properties.
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:18Z INFO JobExtension] Downloading actions
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:18Z INFO HostContext] Well known directory 'Actions': '/home/student/226MessageWebServer/actions-runner/_work/_actions'
+[2021-11-12 16:53:19Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:19Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:19Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:19Z INFO HostContext] Well known directory 'Actions': '/home/student/226MessageWebServer/actions-runner/_work/_actions'
+[2021-11-12 16:53:19Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:19Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:19Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:19Z INFO HostContext] Well known directory 'Actions': '/home/student/226MessageWebServer/actions-runner/_work/_actions'
+[2021-11-12 16:53:19Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/tarball/ec3a7ce113134d7a93b817d10a8272cb61118579' into /home/student/226MessageWebServer/actions-runner/_work/_actions/_temp_ec719b16-6741-4d70-b071-4d5b765dbe98/23cec501-104a-4432-8a03-287856bc2c56.tar.gz.
+[2021-11-12 16:53:19Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2021-11-12 16:53:19Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'ffb14e67-1103-42c2-8391-dea73a3f15b8', success rate: 1/1.
+[2021-11-12 16:53:19Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'ffb14e67-1103-42c2-8391-dea73a3f15b8', success rate: 1/1.
+[2021-11-12 16:53:20Z INFO ActionManager] Which: 'tar'
+[2021-11-12 16:53:20Z INFO ActionManager] Location: '/usr/bin/tar'
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper] Starting process:
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/tar'
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper]   Arguments: '-xzf "/home/student/226MessageWebServer/actions-runner/_work/_actions/_temp_ec719b16-6741-4d70-b071-4d5b765dbe98/23cec501-104a-4432-8a03-287856bc2c56.tar.gz"'
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper]   Working directory: '/home/student/226MessageWebServer/actions-runner/_work/_actions/_temp_ec719b16-6741-4d70-b071-4d5b765dbe98/_staging'
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 12555.
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper] Process started with process id 12555, waiting for process exit.
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper] Finished process 12555 with exit code 0, and elapsed time 00:00:00.0353550.
+[2021-11-12 16:53:20Z INFO ActionManager] Finished getting action repository.
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Actions': '/home/student/226MessageWebServer/actions-runner/_work/_actions'
+[2021-11-12 16:53:20Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node12-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Actions': '/home/student/226MessageWebServer/actions-runner/_work/_actions'
+[2021-11-12 16:53:20Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2021-11-12 16:53:20Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Actions': '/home/student/226MessageWebServer/actions-runner/_work/_actions'
+[2021-11-12 16:53:20Z INFO ActionManager] Load action that reference repository from '/home/student/226MessageWebServer/actions-runner/_work/_actions/actions/checkout/v2'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Actions': '/home/student/226MessageWebServer/actions-runner/_work/_actions'
+[2021-11-12 16:53:20Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2021-11-12 16:53:20Z INFO ActionManager] Action pre node.js file: N/A.
+[2021-11-12 16:53:20Z INFO ActionManager] Action node.js file: dist/index.js.
+[2021-11-12 16:53:20Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2021-11-12 16:53:20Z INFO JobExtension] Adding .
+[2021-11-12 16:53:20Z INFO JobExtension] Adding .
+[2021-11-12 16:53:20Z INFO JobExtension] Adding .
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Diag': '/home/student/226MessageWebServer/actions-runner/_diag'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Diag': '/home/student/226MessageWebServer/actions-runner/_diag'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Diag': '/home/student/226MessageWebServer/actions-runner/_diag'
+[2021-11-12 16:53:20Z INFO JobExtension] Total accessible running process: 142.
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:20Z INFO JobRunner] Total job steps: 3.
+[2021-11-12 16:53:20Z INFO JobRunner] Run all job steps.
+[2021-11-12 16:53:20Z INFO StepsRunner] Processing step: DisplayName='Run actions/checkout@v2'
+[2021-11-12 16:53:20Z INFO StepsRunner] Evaluating: success()
+[2021-11-12 16:53:20Z INFO StepsRunner] Result: true
+[2021-11-12 16:53:20Z INFO StepsRunner] Starting the step.
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Actions': '/home/student/226MessageWebServer/actions-runner/_work/_actions'
+[2021-11-12 16:53:20Z INFO ActionManager] Load action that reference repository from '/home/student/226MessageWebServer/actions-runner/_work/_actions/actions/checkout/v2'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Actions': '/home/student/226MessageWebServer/actions-runner/_work/_actions'
+[2021-11-12 16:53:20Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2021-11-12 16:53:20Z INFO ActionManager] Action pre node.js file: N/A.
+[2021-11-12 16:53:20Z INFO ActionManager] Action node.js file: dist/index.js.
+[2021-11-12 16:53:20Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2021-11-12 16:53:20Z INFO ExecutionContext] Reserve record order 5 to 8 for post job actions.
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Diag': '/home/student/226MessageWebServer/actions-runner/_diag'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Temp': '/home/student/226MessageWebServer/actions-runner/_work/_temp'
+[2021-11-12 16:53:20Z INFO ActionRunner] Write event payload to /home/student/226MessageWebServer/actions-runner/_work/_temp/_github_workflow/event.json
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Temp': '/home/student/226MessageWebServer/actions-runner/_work/_temp'
+[2021-11-12 16:53:20Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2021-11-12 16:53:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2021-11-12 16:53:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2021-11-12 16:53:20Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "hoangdangnhatkha/226MessageWebServer"
+}
+[2021-11-12 16:53:20Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2021-11-12 16:53:20Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2021-11-12 16:53:20Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2021-11-12 16:53:20Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2021-11-12 16:53:20Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2021-11-12 16:53:20Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2021-11-12 16:53:20Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2021-11-12 16:53:20Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2021-11-12 16:53:20Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 58,
+  "col": 14,
+  "lit": "1"
+}
+[2021-11-12 16:53:20Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 61,
+  "col": 14,
+  "lit": "false"
+}
+[2021-11-12 16:53:20Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2021-11-12 16:53:20Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2021-11-12 16:53:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2021-11-12 16:53:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2021-11-12 16:53:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2021-11-12 16:53:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2021-11-12 16:53:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2021-11-12 16:53:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2021-11-12 16:53:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2021-11-12 16:53:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2021-11-12 16:53:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2021-11-12 16:53:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2021-11-12 16:53:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2021-11-12 16:53:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2021-11-12 16:53:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2021-11-12 16:53:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2021-11-12 16:53:20Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2021-11-12 16:53:20Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2021-11-12 16:53:20Z INFO ActionCommandManager] Register action command extension for command set-env
+[2021-11-12 16:53:20Z INFO ActionCommandManager] Register action command extension for command set-output
+[2021-11-12 16:53:20Z INFO ActionCommandManager] Register action command extension for command save-state
+[2021-11-12 16:53:20Z INFO ActionCommandManager] Register action command extension for command add-path
+[2021-11-12 16:53:20Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2021-11-12 16:53:20Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2021-11-12 16:53:20Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2021-11-12 16:53:20Z INFO ActionCommandManager] Register action command extension for command warning
+[2021-11-12 16:53:20Z INFO ActionCommandManager] Register action command extension for command error
+[2021-11-12 16:53:20Z INFO ActionCommandManager] Register action command extension for command notice
+[2021-11-12 16:53:20Z INFO ActionCommandManager] Register action command extension for command debug
+[2021-11-12 16:53:20Z INFO ActionCommandManager] Register action command extension for command group
+[2021-11-12 16:53:20Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2021-11-12 16:53:20Z INFO ActionCommandManager] Register action command extension for command echo
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:20Z INFO HostContext] Well known directory 'Externals': '/home/student/226MessageWebServer/actions-runner/externals'
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper] Starting process:
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper]   File name: '/home/student/226MessageWebServer/actions-runner/externals/node12/bin/node'
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper]   Arguments: '"/home/student/226MessageWebServer/actions-runner/_work/_actions/actions/checkout/v2/dist/index.js"'
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper]   Working directory: '/home/student/226MessageWebServer/actions-runner/_work/226MessageWebServer/226MessageWebServer'
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 12558.
+[2021-11-12 16:53:20Z INFO ProcessInvokerWrapper] Process started with process id 12558, waiting for process exit.
+[2021-11-12 16:53:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-11-12 16:53:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a60052d4-79a0-5821-3eeb-84adb9872c5b', success rate: 1/1.
+[2021-11-12 16:53:21Z INFO AddMaskCommandExtension] Add new secret mask with length of 76
+[2021-11-12 16:53:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-11-12 16:53:22Z INFO ProcessInvokerWrapper] Finished process 12558 with exit code 0, and elapsed time 00:00:01.7507359.
+[2021-11-12 16:53:22Z INFO StepsRunner] Step result: 
+[2021-11-12 16:53:22Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2021-11-12 16:53:22Z INFO StepsRunner] Current state: job state = ''
+[2021-11-12 16:53:22Z INFO StepsRunner] Processing step: DisplayName='Install pipenv'
+[2021-11-12 16:53:22Z INFO StepsRunner] Evaluating: success()
+[2021-11-12 16:53:22Z INFO StepsRunner] Result: true
+[2021-11-12 16:53:22Z INFO StepsRunner] Starting the step.
+[2021-11-12 16:53:22Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:22Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:22Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:22Z INFO HostContext] Well known directory 'Temp': '/home/student/226MessageWebServer/actions-runner/_work/_temp'
+[2021-11-12 16:53:22Z INFO ActionRunner] Write event payload to /home/student/226MessageWebServer/actions-runner/_work/_temp/_github_workflow/event.json
+[2021-11-12 16:53:22Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:22Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:22Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:22Z INFO HostContext] Well known directory 'Temp': '/home/student/226MessageWebServer/actions-runner/_work/_temp'
+[2021-11-12 16:53:22Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2021-11-12 16:53:22Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2021-11-12 16:53:22Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2021-11-12 16:53:22Z INFO ActionCommandManager] Register action command extension for command set-env
+[2021-11-12 16:53:22Z INFO ActionCommandManager] Register action command extension for command set-output
+[2021-11-12 16:53:22Z INFO ActionCommandManager] Register action command extension for command save-state
+[2021-11-12 16:53:22Z INFO ActionCommandManager] Register action command extension for command add-path
+[2021-11-12 16:53:22Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2021-11-12 16:53:22Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2021-11-12 16:53:22Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2021-11-12 16:53:22Z INFO ActionCommandManager] Register action command extension for command warning
+[2021-11-12 16:53:22Z INFO ActionCommandManager] Register action command extension for command error
+[2021-11-12 16:53:22Z INFO ActionCommandManager] Register action command extension for command notice
+[2021-11-12 16:53:22Z INFO ActionCommandManager] Register action command extension for command debug
+[2021-11-12 16:53:22Z INFO ActionCommandManager] Register action command extension for command group
+[2021-11-12 16:53:22Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2021-11-12 16:53:22Z INFO ActionCommandManager] Register action command extension for command echo
+[2021-11-12 16:53:22Z INFO ScriptHandler] Which: 'bash'
+[2021-11-12 16:53:22Z INFO ScriptHandler] Location: '/usr/bin/bash'
+[2021-11-12 16:53:22Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:22Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:22Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:22Z INFO HostContext] Well known directory 'Temp': '/home/student/226MessageWebServer/actions-runner/_work/_temp'
+[2021-11-12 16:53:22Z INFO ScriptHandler] Which: 'bash'
+[2021-11-12 16:53:22Z INFO ScriptHandler] Location: '/usr/bin/bash'
+[2021-11-12 16:53:22Z INFO ProcessInvokerWrapper] Starting process:
+[2021-11-12 16:53:22Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/bash'
+[2021-11-12 16:53:22Z INFO ProcessInvokerWrapper]   Arguments: '-e /home/student/226MessageWebServer/actions-runner/_work/_temp/8965c52a-093e-4732-8af8-9a7c420be5e2.sh'
+[2021-11-12 16:53:22Z INFO ProcessInvokerWrapper]   Working directory: '/home/student/226MessageWebServer/actions-runner/_work/226MessageWebServer/226MessageWebServer'
+[2021-11-12 16:53:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-11-12 16:53:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-11-12 16:53:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2021-11-12 16:53:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-11-12 16:53:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2021-11-12 16:53:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-11-12 16:53:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2021-11-12 16:53:22Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 12646.
+[2021-11-12 16:53:22Z INFO ProcessInvokerWrapper] Process started with process id 12646, waiting for process exit.
+[2021-11-12 16:53:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a60052d4-79a0-5821-3eeb-84adb9872c5b', success rate: 1/1.
+[2021-11-12 16:53:22Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2021-11-12 16:53:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a60052d4-79a0-5821-3eeb-84adb9872c5b', success rate: 1/1.
+[2021-11-12 16:53:23Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'dd23db01-cff6-57a4-373a-5c8097a97333', success rate: 1/1.
+[2021-11-12 16:53:24Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2021-11-12 16:53:24Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'dd23db01-cff6-57a4-373a-5c8097a97333', success rate: 1/1.
+[2021-11-12 16:53:24Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-11-12 16:53:24Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-11-12 16:53:24Z INFO ProcessInvokerWrapper] Finished process 12646 with exit code 0, and elapsed time 00:00:02.3234726.
+[2021-11-12 16:53:24Z INFO StepsRunner] Step result: 
+[2021-11-12 16:53:24Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2021-11-12 16:53:24Z INFO StepsRunner] Current state: job state = ''
+[2021-11-12 16:53:24Z INFO StepsRunner] Processing step: DisplayName='Run the tests'
+[2021-11-12 16:53:24Z INFO StepsRunner] Evaluating: success()
+[2021-11-12 16:53:24Z INFO StepsRunner] Result: true
+[2021-11-12 16:53:24Z INFO StepsRunner] Starting the step.
+[2021-11-12 16:53:24Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:24Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:24Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:24Z INFO HostContext] Well known directory 'Temp': '/home/student/226MessageWebServer/actions-runner/_work/_temp'
+[2021-11-12 16:53:24Z INFO ActionRunner] Write event payload to /home/student/226MessageWebServer/actions-runner/_work/_temp/_github_workflow/event.json
+[2021-11-12 16:53:24Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:24Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:24Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:24Z INFO HostContext] Well known directory 'Temp': '/home/student/226MessageWebServer/actions-runner/_work/_temp'
+[2021-11-12 16:53:24Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2021-11-12 16:53:24Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2021-11-12 16:53:24Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2021-11-12 16:53:24Z INFO ActionCommandManager] Register action command extension for command set-env
+[2021-11-12 16:53:24Z INFO ActionCommandManager] Register action command extension for command set-output
+[2021-11-12 16:53:24Z INFO ActionCommandManager] Register action command extension for command save-state
+[2021-11-12 16:53:24Z INFO ActionCommandManager] Register action command extension for command add-path
+[2021-11-12 16:53:24Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2021-11-12 16:53:24Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2021-11-12 16:53:24Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2021-11-12 16:53:24Z INFO ActionCommandManager] Register action command extension for command warning
+[2021-11-12 16:53:24Z INFO ActionCommandManager] Register action command extension for command error
+[2021-11-12 16:53:24Z INFO ActionCommandManager] Register action command extension for command notice
+[2021-11-12 16:53:24Z INFO ActionCommandManager] Register action command extension for command debug
+[2021-11-12 16:53:24Z INFO ActionCommandManager] Register action command extension for command group
+[2021-11-12 16:53:24Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2021-11-12 16:53:24Z INFO ActionCommandManager] Register action command extension for command echo
+[2021-11-12 16:53:24Z INFO ScriptHandler] Which: 'bash'
+[2021-11-12 16:53:24Z INFO ScriptHandler] Location: '/usr/bin/bash'
+[2021-11-12 16:53:24Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:24Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:24Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:24Z INFO HostContext] Well known directory 'Temp': '/home/student/226MessageWebServer/actions-runner/_work/_temp'
+[2021-11-12 16:53:24Z INFO ScriptHandler] Which: 'bash'
+[2021-11-12 16:53:24Z INFO ScriptHandler] Location: '/usr/bin/bash'
+[2021-11-12 16:53:24Z INFO ProcessInvokerWrapper] Starting process:
+[2021-11-12 16:53:24Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/bash'
+[2021-11-12 16:53:24Z INFO ProcessInvokerWrapper]   Arguments: '-e /home/student/226MessageWebServer/actions-runner/_work/_temp/b6fefc26-fc22-4546-a58f-da3bd0c1dd3b.sh'
+[2021-11-12 16:53:24Z INFO ProcessInvokerWrapper]   Working directory: '/home/student/226MessageWebServer/actions-runner/_work/226MessageWebServer/226MessageWebServer'
+[2021-11-12 16:53:24Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-11-12 16:53:24Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-11-12 16:53:24Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2021-11-12 16:53:24Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-11-12 16:53:24Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2021-11-12 16:53:24Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-11-12 16:53:24Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2021-11-12 16:53:24Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 12657.
+[2021-11-12 16:53:24Z INFO ProcessInvokerWrapper] Process started with process id 12657, waiting for process exit.
+[2021-11-12 16:53:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record '87b991c0-db8a-593e-4233-d8a37f15e4c9', success rate: 1/1.
+[2021-11-12 16:53:26Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2021-11-12 16:53:27Z INFO JobServerQueue] Try to append 1 batches web console lines for record '87b991c0-db8a-593e-4233-d8a37f15e4c9', success rate: 1/1.
+[2021-11-12 16:53:27Z INFO JobServerQueue] Try to append 1 batches web console lines for record '87b991c0-db8a-593e-4233-d8a37f15e4c9', success rate: 1/1.
+[2021-11-12 16:53:28Z INFO JobServerQueue] Try to append 1 batches web console lines for record '87b991c0-db8a-593e-4233-d8a37f15e4c9', success rate: 1/1.
+[2021-11-12 16:53:30Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:30Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:30Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record '87b991c0-db8a-593e-4233-d8a37f15e4c9', success rate: 1/1.
+[2021-11-12 16:53:40Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:40Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:40Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record '87b991c0-db8a-593e-4233-d8a37f15e4c9', success rate: 1/1.
+[2021-11-12 16:53:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-11-12 16:53:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-11-12 16:53:43Z INFO ProcessInvokerWrapper] Finished process 12657 with exit code 0, and elapsed time 00:00:18.9208842.
+[2021-11-12 16:53:43Z INFO StepsRunner] Step result: 
+[2021-11-12 16:53:43Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2021-11-12 16:53:43Z INFO StepsRunner] Current state: job state = ''
+[2021-11-12 16:53:43Z INFO StepsRunner] Processing step: DisplayName='Post Run actions/checkout@v2'
+[2021-11-12 16:53:43Z INFO StepsRunner] Evaluating: always()
+[2021-11-12 16:53:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record '87b991c0-db8a-593e-4233-d8a37f15e4c9', success rate: 1/1.
+[2021-11-12 16:53:43Z INFO StepsRunner] Result: true
+[2021-11-12 16:53:43Z INFO StepsRunner] Starting the step.
+[2021-11-12 16:53:43Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:43Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:43Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:43Z INFO HostContext] Well known directory 'Actions': '/home/student/226MessageWebServer/actions-runner/_work/_actions'
+[2021-11-12 16:53:43Z INFO ActionManager] Load action that reference repository from '/home/student/226MessageWebServer/actions-runner/_work/_actions/actions/checkout/v2'
+[2021-11-12 16:53:43Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:43Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:43Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:43Z INFO HostContext] Well known directory 'Actions': '/home/student/226MessageWebServer/actions-runner/_work/_actions'
+[2021-11-12 16:53:43Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2021-11-12 16:53:43Z INFO ActionManager] Action pre node.js file: N/A.
+[2021-11-12 16:53:43Z INFO ActionManager] Action node.js file: dist/index.js.
+[2021-11-12 16:53:43Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2021-11-12 16:53:43Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:43Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:43Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:43Z INFO HostContext] Well known directory 'Temp': '/home/student/226MessageWebServer/actions-runner/_work/_temp'
+[2021-11-12 16:53:43Z INFO ActionRunner] Write event payload to /home/student/226MessageWebServer/actions-runner/_work/_temp/_github_workflow/event.json
+[2021-11-12 16:53:43Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:43Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:43Z INFO HostContext] Well known directory 'Work': '/home/student/226MessageWebServer/actions-runner/_work'
+[2021-11-12 16:53:43Z INFO HostContext] Well known directory 'Temp': '/home/student/226MessageWebServer/actions-runner/_work/_temp'
+[2021-11-12 16:53:43Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2021-11-12 16:53:43Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "hoangdangnhatkha/226MessageWebServer"
+}
+[2021-11-12 16:53:43Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2021-11-12 16:53:43Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2021-11-12 16:53:43Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2021-11-12 16:53:43Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2021-11-12 16:53:43Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2021-11-12 16:53:43Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2021-11-12 16:53:43Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2021-11-12 16:53:43Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2021-11-12 16:53:43Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 58,
+  "col": 14,
+  "lit": "1"
+}
+[2021-11-12 16:53:43Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 61,
+  "col": 14,
+  "lit": "false"
+}
+[2021-11-12 16:53:43Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2021-11-12 16:53:43Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2021-11-12 16:53:43Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2021-11-12 16:53:43Z INFO ActionCommandManager] Register action command extension for command set-env
+[2021-11-12 16:53:43Z INFO ActionCommandManager] Register action command extension for command set-output
+[2021-11-12 16:53:43Z INFO ActionCommandManager] Register action command extension for command save-state
+[2021-11-12 16:53:43Z INFO ActionCommandManager] Register action command extension for command add-path
+[2021-11-12 16:53:43Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2021-11-12 16:53:43Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2021-11-12 16:53:43Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2021-11-12 16:53:43Z INFO ActionCommandManager] Register action command extension for command warning
+[2021-11-12 16:53:43Z INFO ActionCommandManager] Register action command extension for command error
+[2021-11-12 16:53:43Z INFO ActionCommandManager] Register action command extension for command notice
+[2021-11-12 16:53:43Z INFO ActionCommandManager] Register action command extension for command debug
+[2021-11-12 16:53:43Z INFO ActionCommandManager] Register action command extension for command group
+[2021-11-12 16:53:43Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2021-11-12 16:53:43Z INFO ActionCommandManager] Register action command extension for command echo
+[2021-11-12 16:53:43Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:43Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:43Z INFO HostContext] Well known directory 'Externals': '/home/student/226MessageWebServer/actions-runner/externals'
+[2021-11-12 16:53:43Z INFO ProcessInvokerWrapper] Starting process:
+[2021-11-12 16:53:43Z INFO ProcessInvokerWrapper]   File name: '/home/student/226MessageWebServer/actions-runner/externals/node12/bin/node'
+[2021-11-12 16:53:43Z INFO ProcessInvokerWrapper]   Arguments: '"/home/student/226MessageWebServer/actions-runner/_work/_actions/actions/checkout/v2/dist/index.js"'
+[2021-11-12 16:53:43Z INFO ProcessInvokerWrapper]   Working directory: '/home/student/226MessageWebServer/actions-runner/_work/226MessageWebServer/226MessageWebServer'
+[2021-11-12 16:53:43Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-11-12 16:53:43Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-11-12 16:53:43Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2021-11-12 16:53:43Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-11-12 16:53:43Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2021-11-12 16:53:43Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-11-12 16:53:43Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2021-11-12 16:53:43Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 12700.
+[2021-11-12 16:53:43Z INFO ProcessInvokerWrapper] Process started with process id 12700, waiting for process exit.
+[2021-11-12 16:53:44Z INFO AddMaskCommandExtension] Add new secret mask with length of 32
+[2021-11-12 16:53:44Z INFO JobServerQueue] Try to append 1 batches web console lines for record '87b991c0-db8a-593e-4233-d8a37f15e4c9', success rate: 1/1.
+[2021-11-12 16:53:44Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-11-12 16:53:44Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-11-12 16:53:44Z INFO ProcessInvokerWrapper] Finished process 12700 with exit code 0, and elapsed time 00:00:00.3664096.
+[2021-11-12 16:53:44Z INFO StepsRunner] Step result: 
+[2021-11-12 16:53:44Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2021-11-12 16:53:44Z INFO StepsRunner] Current state: job state = ''
+[2021-11-12 16:53:44Z INFO JobRunner] Finalize job.
+[2021-11-12 16:53:44Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:44Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:44Z INFO HostContext] Well known directory 'Diag': '/home/student/226MessageWebServer/actions-runner/_diag'
+[2021-11-12 16:53:44Z INFO JobExtension] Initialize Env context
+[2021-11-12 16:53:44Z INFO JobExtension] Initialize steps context
+[2021-11-12 16:53:44Z INFO JobExtension] Total accessible running process: 143.
+[2021-11-12 16:53:44Z INFO JobExtension] Inspecting process environment variables. PID: 10630 (kworker/1:1-events)
+[2021-11-12 16:53:44Z INFO LinuxProcessExtensions] Read env from /proc/10630/environ
+[2021-11-12 16:53:44Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/10630/environ' is denied.
+[2021-11-12 16:53:44Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'fb63d99c-8600-48a9-93f6-b1e9d588cdf3', success rate: 1/1.
+[2021-11-12 16:53:44Z INFO JobExtension] Inspecting process environment variables. PID: 12686 (kworker/0:0)
+[2021-11-12 16:53:44Z INFO LinuxProcessExtensions] Read env from /proc/12686/environ
+[2021-11-12 16:53:44Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/12686/environ' is denied.
+[2021-11-12 16:53:44Z INFO JobRunner] Job result after all job steps finish: Succeeded
+[2021-11-12 16:53:44Z INFO JobRunner] Completing the job execution context.
+[2021-11-12 16:53:44Z INFO JobRunner] Shutting down the job server queue.
+[2021-11-12 16:53:44Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2021-11-12 16:53:44Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2021-11-12 16:53:45Z INFO JobServerQueue] All queue process task stopped.
+[2021-11-12 16:53:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'fb63d99c-8600-48a9-93f6-b1e9d588cdf3', success rate: 1/1.
+[2021-11-12 16:53:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a56aaba4-1b42-4d36-bc56-b77bad25804c', success rate: 1/1.
+[2021-11-12 16:53:45Z INFO JobServerQueue] Web console line queue drained.
+[2021-11-12 16:53:45Z INFO JobServerQueue] Uploading 2 files in one shot.
+[2021-11-12 16:53:46Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2021-11-12 16:53:46Z INFO JobServerQueue] File upload queue drained.
+[2021-11-12 16:53:46Z INFO JobServerQueue] Timeline update queue drained.
+[2021-11-12 16:53:46Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2021-11-12 16:53:46Z INFO TempDirectoryManager] Cleaning runner temp folder: /home/student/226MessageWebServer/actions-runner/_work/_temp
+[2021-11-12 16:53:46Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-12 16:53:46Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-12 16:53:46Z INFO HostContext] Well known directory 'Diag': '/home/student/226MessageWebServer/actions-runner/_diag'
+[2021-11-12 16:53:46Z INFO HostContext] Well known config file 'Telemetry': '/home/student/226MessageWebServer/actions-runner/_diag/.telemetry'
+[2021-11-12 16:53:46Z INFO JobRunner] Raising job completed event.
+[2021-11-12 16:53:46Z INFO Worker] Job completed.

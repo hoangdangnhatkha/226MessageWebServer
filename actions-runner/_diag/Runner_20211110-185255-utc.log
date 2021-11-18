@@ -1,0 +1,228 @@
+[2021-11-10 18:52:55Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2021-11-10 18:52:55Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-10 18:52:55Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-10 18:52:55Z INFO HostContext] Well known config file 'Credentials': '/home/student/226MessageWebServer/actions-runner/.credentials'
+[2021-11-10 18:52:55Z INFO Listener] Runner is built for Linux (X64) - linux-x64.
+[2021-11-10 18:52:55Z INFO Listener] RuntimeInformation: Linux 5.4.0-81-generic #91-Ubuntu SMP Thu Jul 15 19:09:17 UTC 2021.
+[2021-11-10 18:52:55Z INFO Listener] Version: 2.284.0
+[2021-11-10 18:52:55Z INFO Listener] Commit: 9027c154d05776c16f6df6c0345bc9ec20440ebe
+[2021-11-10 18:52:55Z INFO Listener] Culture: en-US
+[2021-11-10 18:52:55Z INFO Listener] UI Culture: en-US
+[2021-11-10 18:52:55Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-10 18:52:55Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-10 18:52:55Z INFO Listener] Validating directory permissions for: '/home/student/226MessageWebServer/actions-runner'
+[2021-11-10 18:52:55Z INFO CommandLineParser] Parse
+[2021-11-10 18:52:55Z INFO CommandLineParser] Parsing 5 args
+[2021-11-10 18:52:55Z INFO CommandLineParser] parsing argument
+[2021-11-10 18:52:55Z INFO CommandLineParser] HasArgs: False
+[2021-11-10 18:52:55Z INFO CommandLineParser] Adding Command: configure
+[2021-11-10 18:52:55Z INFO CommandLineParser] parsing argument
+[2021-11-10 18:52:55Z INFO CommandLineParser] HasArgs: True
+[2021-11-10 18:52:55Z INFO CommandLineParser] arg: url
+[2021-11-10 18:52:55Z INFO CommandLineParser] parsing argument
+[2021-11-10 18:52:55Z INFO CommandLineParser] HasArgs: True
+[2021-11-10 18:52:55Z INFO CommandLineParser] Adding option 'url': 'https://github.com/hoangdangnhatkha/226MessageWebServer'
+[2021-11-10 18:52:55Z INFO CommandLineParser] parsing argument
+[2021-11-10 18:52:55Z INFO CommandLineParser] HasArgs: True
+[2021-11-10 18:52:55Z INFO CommandLineParser] arg: token
+[2021-11-10 18:52:55Z INFO CommandLineParser] parsing argument
+[2021-11-10 18:52:55Z INFO CommandLineParser] HasArgs: True
+[2021-11-10 18:52:55Z INFO CommandLineParser] Adding option 'token': '***'
+[2021-11-10 18:52:55Z INFO Listener] Arguments parsed
+[2021-11-10 18:52:55Z INFO Runner] ExecuteCommand
+[2021-11-10 18:52:55Z INFO ConfigurationStore] currentAssemblyLocation: /home/student/226MessageWebServer/actions-runner/bin/Runner.Listener.dll
+[2021-11-10 18:52:55Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-10 18:52:55Z INFO ConfigurationStore] binPath: /home/student/226MessageWebServer/actions-runner/bin
+[2021-11-10 18:52:55Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-10 18:52:55Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-10 18:52:55Z INFO ConfigurationStore] RootFolder: /home/student/226MessageWebServer/actions-runner
+[2021-11-10 18:52:55Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-10 18:52:55Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-10 18:52:55Z INFO HostContext] Well known config file 'Runner': '/home/student/226MessageWebServer/actions-runner/.runner'
+[2021-11-10 18:52:55Z INFO ConfigurationStore] ConfigFilePath: /home/student/226MessageWebServer/actions-runner/.runner
+[2021-11-10 18:52:55Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-10 18:52:55Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-10 18:52:55Z INFO HostContext] Well known config file 'Credentials': '/home/student/226MessageWebServer/actions-runner/.credentials'
+[2021-11-10 18:52:55Z INFO ConfigurationStore] CredFilePath: /home/student/226MessageWebServer/actions-runner/.credentials
+[2021-11-10 18:52:55Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-10 18:52:55Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-10 18:52:55Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/student/226MessageWebServer/actions-runner/.credentials_migrated'
+[2021-11-10 18:52:55Z INFO ConfigurationStore] MigratedCredFilePath: /home/student/226MessageWebServer/actions-runner/.credentials_migrated
+[2021-11-10 18:52:55Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-10 18:52:55Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-10 18:52:55Z INFO HostContext] Well known config file 'Service': '/home/student/226MessageWebServer/actions-runner/.service'
+[2021-11-10 18:52:55Z INFO ConfigurationStore] ServiceConfigFilePath: /home/student/226MessageWebServer/actions-runner/.service
+[2021-11-10 18:52:55Z INFO CommandSettings] Flag 'help': 'False'
+[2021-11-10 18:52:55Z INFO CommandSettings] Flag 'version': 'False'
+[2021-11-10 18:52:55Z INFO CommandSettings] Flag 'commit': 'False'
+[2021-11-10 18:52:55Z INFO CommandSettings] Flag 'check': 'False'
+[2021-11-10 18:52:55Z INFO CommandSettings] Command 'configure': 'True'
+[2021-11-10 18:52:55Z INFO Terminal] WRITE LINE: 
+[2021-11-10 18:52:55Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2021-11-10 18:52:55Z INFO Terminal] WRITE LINE: |        ____ _ _   _   _       _          _        _   _                      |
+[2021-11-10 18:52:55Z INFO Terminal] WRITE LINE: |       / ___(_) |_| | | |_   _| |__      / \   ___| |_(_) ___  _ __  ___      |
+[2021-11-10 18:52:55Z INFO Terminal] WRITE LINE: |      | |  _| | __| |_| | | | | '_ \    / _ \ / __| __| |/ _ \| '_ \/ __|     |
+[2021-11-10 18:52:55Z INFO Terminal] WRITE LINE: |      | |_| | | |_|  _  | |_| | |_) |  / ___ \ (__| |_| | (_) | | | \__ \     |
+[2021-11-10 18:52:55Z INFO Terminal] WRITE LINE: |       \____|_|\__|_| |_|\__,_|_.__/  /_/   \_\___|\__|_|\___/|_| |_|___/     |
+[2021-11-10 18:52:55Z INFO Terminal] WRITE LINE: |                                                                              |
+[2021-11-10 18:52:55Z INFO Terminal] WRITE: |                       
+[2021-11-10 18:52:55Z INFO Terminal] WRITE: Self-hosted runner registration
+[2021-11-10 18:52:55Z INFO Terminal] WRITE LINE:                         |
+[2021-11-10 18:52:55Z INFO Terminal] WRITE LINE: |                                                                              |
+[2021-11-10 18:52:55Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2021-11-10 18:52:55Z INFO ConfigurationManager] ConfigureAsync
+[2021-11-10 18:52:55Z INFO ConfigurationStore] IsConfigured()
+[2021-11-10 18:52:55Z INFO ConfigurationStore] IsConfigured: False
+[2021-11-10 18:52:55Z INFO ConfigurationManager] Is configured: False
+[2021-11-10 18:52:55Z INFO CommandSettings] Arg 'url': 'https://github.com/hoangdangnhatkha/226MessageWebServer'
+[2021-11-10 18:52:55Z INFO CommandSettings] Remove url from Arg dictionary.
+[2021-11-10 18:52:55Z INFO CommandSettings] Arg 'token': '***'
+[2021-11-10 18:52:55Z INFO CommandSettings] Remove token from Arg dictionary.
+[2021-11-10 18:52:56Z INFO ConfigurationManager] Http response code: OK from 'POST https://api.github.com/actions/runner-registration'
+[2021-11-10 18:52:56Z INFO ConfigurationManager] cred retrieved via GitHub auth
+[2021-11-10 18:52:56Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2021-11-10 18:52:56Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-11-10 18:52:56Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2021-11-10 18:52:56Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-11-10 18:52:56Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2021-11-10 18:52:56Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-11-10 18:52:56Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-11-10 18:52:56Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-11-10 18:52:56Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-11-10 18:52:59Z INFO Terminal] WRITE LINE: 
+[2021-11-10 18:52:59Z INFO ConfigurationManager] Test Connection complete.
+[2021-11-10 18:52:59Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-10 18:52:59Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-10 18:52:59Z INFO HostContext] Well known config file 'RSACredentials': '/home/student/226MessageWebServer/actions-runner/.credentials_rsaparams'
+[2021-11-10 18:52:59Z INFO RSAFileKeyManager] Creating new RSA key using 2048-bit key length
+[2021-11-10 18:52:59Z INFO RSAFileKeyManager] Successfully saved RSA key parameters to file /home/student/226MessageWebServer/actions-runner/.credentials_rsaparams
+[2021-11-10 18:52:59Z INFO RSAFileKeyManager] Which: 'chmod'
+[2021-11-10 18:52:59Z INFO RSAFileKeyManager] Location: '/usr/bin/chmod'
+[2021-11-10 18:52:59Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-10 18:52:59Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-10 18:52:59Z INFO ProcessInvokerWrapper] Starting process:
+[2021-11-10 18:52:59Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/chmod'
+[2021-11-10 18:52:59Z INFO ProcessInvokerWrapper]   Arguments: '600 /home/student/226MessageWebServer/actions-runner/.credentials_rsaparams'
+[2021-11-10 18:52:59Z INFO ProcessInvokerWrapper]   Working directory: '/home/student/226MessageWebServer/actions-runner'
+[2021-11-10 18:52:59Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-11-10 18:52:59Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-11-10 18:52:59Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2021-11-10 18:52:59Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-11-10 18:52:59Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2021-11-10 18:52:59Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-11-10 18:52:59Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2021-11-10 18:52:59Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-11-10 18:52:59Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-11-10 18:52:59Z INFO ProcessInvokerWrapper] Process started with process id 314076, waiting for process exit.
+[2021-11-10 18:52:59Z INFO ProcessInvokerWrapper] Finished process 314076 with exit code 0, and elapsed time 00:00:00.0084891.
+[2021-11-10 18:52:59Z INFO RSAFileKeyManager] Successfully set permissions for RSA key parameters file /home/student/226MessageWebServer/actions-runner/.credentials_rsaparams
+[2021-11-10 18:52:59Z INFO CommandSettings] Arg 'runnergroup': ''
+[2021-11-10 18:52:59Z INFO CommandSettings] Flag 'unattended': 'False'
+[2021-11-10 18:52:59Z INFO PromptManager] ReadValue
+[2021-11-10 18:52:59Z INFO Terminal] WRITE: Enter the name of the runner group to add this runner to: 
+[2021-11-10 18:52:59Z INFO Terminal] WRITE: [press Enter for Default] 
+[2021-11-10 18:52:59Z INFO Terminal] READ LINE
+[2021-11-10 18:53:05Z INFO Terminal] Read value: ''
+[2021-11-10 18:53:05Z INFO PromptManager] Falling back to the default: 'Default'
+[2021-11-10 18:53:05Z INFO Terminal] WRITE LINE: 
+[2021-11-10 18:53:05Z INFO ConfigurationManager] Found a self-hosted runner group with id 1 and name Default
+[2021-11-10 18:53:05Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2021-11-10 18:53:05Z INFO CommandSettings] Arg 'name': ''
+[2021-11-10 18:53:05Z INFO CommandSettings] Flag 'unattended': 'False'
+[2021-11-10 18:53:05Z INFO PromptManager] ReadValue
+[2021-11-10 18:53:05Z INFO Terminal] WRITE: Enter the name of runner: 
+[2021-11-10 18:53:05Z INFO Terminal] WRITE: [press Enter for ics226] 
+[2021-11-10 18:53:05Z INFO Terminal] READ LINE
+[2021-11-10 18:53:05Z INFO Terminal] Read value: ''
+[2021-11-10 18:53:05Z INFO PromptManager] Falling back to the default: 'ics226'
+[2021-11-10 18:53:05Z INFO Terminal] WRITE LINE: 
+[2021-11-10 18:53:05Z INFO CommandSettings] Arg 'labels': ''
+[2021-11-10 18:53:05Z INFO CommandSettings] Flag 'unattended': 'False'
+[2021-11-10 18:53:05Z INFO PromptManager] ReadValue
+[2021-11-10 18:53:05Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Linux', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2021-11-10 18:53:05Z INFO Terminal] WRITE: [press Enter to skip] 
+[2021-11-10 18:53:05Z INFO Terminal] READ LINE
+[2021-11-10 18:53:08Z INFO Terminal] Read value: ''
+[2021-11-10 18:53:08Z INFO Terminal] WRITE LINE: 
+[2021-11-10 18:53:08Z INFO Terminal] WRITE LINE: A runner exists with the same name
+[2021-11-10 18:53:08Z INFO CommandSettings] Flag 'replace': 'False'
+[2021-11-10 18:53:08Z INFO CommandSettings] Flag 'unattended': 'False'
+[2021-11-10 18:53:08Z INFO PromptManager] ReadValue
+[2021-11-10 18:53:08Z INFO Terminal] WRITE: Would you like to replace the existing runner? (Y/N) 
+[2021-11-10 18:53:08Z INFO Terminal] WRITE: [press Enter for N] 
+[2021-11-10 18:53:08Z INFO Terminal] READ LINE
+[2021-11-10 18:53:15Z INFO Terminal] Read value: 'y'
+[2021-11-10 18:53:15Z INFO ConfigurationStore] Saving OAuth credential @ /home/student/226MessageWebServer/actions-runner/.credentials
+[2021-11-10 18:53:15Z INFO ConfigurationStore] Credentials Saved.
+[2021-11-10 18:53:15Z INFO ConfigurationStore] HasCredentials()
+[2021-11-10 18:53:15Z INFO ConfigurationStore] stored True
+[2021-11-10 18:53:15Z INFO CredentialManager] GetCredentialProvider
+[2021-11-10 18:53:15Z INFO CredentialManager] Creating type OAuth
+[2021-11-10 18:53:15Z INFO CredentialManager] Creating credential type: OAuth
+[2021-11-10 18:53:15Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/student/226MessageWebServer/actions-runner/.credentials_rsaparams
+[2021-11-10 18:53:15Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2021-11-10 18:53:15Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-11-10 18:53:15Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2021-11-10 18:53:15Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-11-10 18:53:15Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2021-11-10 18:53:15Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2021-11-10 18:53:15Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-11-10 18:53:15Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-11-10 18:53:15Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2021-11-10 18:53:16Z WARN GitHubActionsService] Authentication failed with status code 401.
+Transfer-Encoding: chunked
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: 7fa3b2f4-a97d-4247-a134-85a4d5d7ab42
+ActivityId: 2eb798e1-ae23-40d7-8ac4-2fed45721690
+X-TFS-Session: 783b4517-b709-4f0e-bd90-4561131b41e3
+X-VSS-E2EID: 3760b268-348b-45a9-87a5-7bdca86645c5
+X-VSS-SenderDeploymentId: 13a19993-c6bc-326c-afb4-32c5519f46f0
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: 43974C4D8CEB465ABF0BE196AD5EDA77 Ref B: WSTEDGE1016 Ref C: 2021-11-10T18:53:16Z
+Date: Wed, 10 Nov 2021 18:53:16 GMT
+
+[2021-11-10 18:53:16Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/student/226MessageWebServer/actions-runner/.credentials_rsaparams
+[2021-11-10 18:53:16Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/student/226MessageWebServer/actions-runner/.credentials_rsaparams
+[2021-11-10 18:53:17Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2021-11-10 18:53:17Z INFO CommandSettings] Arg 'work': ''
+[2021-11-10 18:53:17Z INFO CommandSettings] Flag 'unattended': 'False'
+[2021-11-10 18:53:17Z INFO PromptManager] ReadValue
+[2021-11-10 18:53:17Z INFO Terminal] WRITE: Enter name of work folder: 
+[2021-11-10 18:53:17Z INFO Terminal] WRITE: [press Enter for _work] 
+[2021-11-10 18:53:17Z INFO Terminal] READ LINE
+[2021-11-10 18:53:19Z INFO Terminal] Read value: ''
+[2021-11-10 18:53:19Z INFO PromptManager] Falling back to the default: '_work'
+[2021-11-10 18:53:19Z INFO ConfigurationStore] Saving runner settings.
+[2021-11-10 18:53:19Z INFO ConfigurationStore] Settings Saved.
+[2021-11-10 18:53:19Z INFO Terminal] WRITE LINE: 
+[2021-11-10 18:53:19Z INFO Terminal] WRITE LINE: 
+[2021-11-10 18:53:19Z INFO SystemDControlManager] Service name 'actions.runner.hoangdangnhatkha-226MessageWebServer.ics226.service' display name 'GitHub Actions Runner (hoangdangnhatkha-226MessageWebServer.ics226)' will be used for service configuration.
+[2021-11-10 18:53:19Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-10 18:53:19Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-10 18:53:19Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-10 18:53:19Z INFO HostContext] Well known directory 'Bin': '/home/student/226MessageWebServer/actions-runner/bin'
+[2021-11-10 18:53:19Z INFO HostContext] Well known directory 'Root': '/home/student/226MessageWebServer/actions-runner'
+[2021-11-10 18:53:19Z INFO UnixUtil] Which: 'chmod'
+[2021-11-10 18:53:19Z INFO UnixUtil] Location: '/usr/bin/chmod'
+[2021-11-10 18:53:19Z INFO UnixUtil] Running /usr/bin/chmod 755 "/home/student/226MessageWebServer/actions-runner/svc.sh"
+[2021-11-10 18:53:19Z INFO ProcessInvokerWrapper] Starting process:
+[2021-11-10 18:53:19Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/chmod'
+[2021-11-10 18:53:19Z INFO ProcessInvokerWrapper]   Arguments: '755 "/home/student/226MessageWebServer/actions-runner/svc.sh"'
+[2021-11-10 18:53:19Z INFO ProcessInvokerWrapper]   Working directory: '/home/student/226MessageWebServer/actions-runner'
+[2021-11-10 18:53:19Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2021-11-10 18:53:19Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-11-10 18:53:19Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2021-11-10 18:53:19Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-11-10 18:53:19Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2021-11-10 18:53:19Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-11-10 18:53:19Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2021-11-10 18:53:19Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 314202.
+[2021-11-10 18:53:19Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-11-10 18:53:19Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-11-10 18:53:19Z INFO ProcessInvokerWrapper] Process started with process id 314202, waiting for process exit.
+[2021-11-10 18:53:19Z INFO ProcessInvokerWrapper] Finished process 314202 with exit code 0, and elapsed time 00:00:00.0021835.
+[2021-11-10 18:53:19Z INFO Listener] Runner execution has finished with return code 0

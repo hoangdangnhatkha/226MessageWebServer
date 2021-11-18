@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "hoangdangnhatkha/226MessageWebServer",
+  "pipelineDirectory": "226MessageWebServer",
+  "workspaceDirectory": "226MessageWebServer/226MessageWebServer",
+  "repositories": {
+    "hoangdangnhatkha/226MessageWebServer": {
+      "repositoryPath": "226MessageWebServer/226MessageWebServer",
+      "lastRunOn": "11/10/2021 10:43:52 -08:00"
+    }
+  },
+  "lastRunOn": "11/10/2021 10:43:52 -08:00"
+}

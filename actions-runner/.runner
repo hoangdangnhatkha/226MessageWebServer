@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 2,
+  "agentName": "ics226",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelines.actions.githubusercontent.com/Ax0Ej6jhyj4ZtQzoHXEbkH0BeyDq8whKqU8oAVKsNSbCVBwj6I",
+  "gitHubUrl": "https://github.com/hoangdangnhatkha/226MessageWebServer",
+  "workFolder": "_work"
+}
