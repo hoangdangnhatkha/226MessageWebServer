@@ -22,4 +22,4 @@ jobs:
       - name: Run the tests
         run: |
           pipenv install django
-          pipenv run website/manage.py test hello
+          pipenv run manage.py test hello
